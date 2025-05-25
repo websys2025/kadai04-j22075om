@@ -54,7 +54,9 @@
                         // 購入による商品のa在庫削減処理
                          this.stock--; 
                         // 課題4-3. ここにコードを書く
+                         console.log("残りは" + this.stock + "個です。");
                         // 在庫用のエレメントを抽出し、HTML内の個数を更新
+                        document.getElementById("stock" + this.id).innerText = this.stock;
                     } else console.log(this.name+"は商品の在庫がないため購入できません。");
                 }
             } // End of Item class
